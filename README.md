@@ -14,7 +14,7 @@ npm install && npm run dev
 
 Rest of the content in the TUTORIAL.md
 
-3 Corresponding/Matching Projects
+3.Corresponding/Matching Projects
 
 -useState
 
