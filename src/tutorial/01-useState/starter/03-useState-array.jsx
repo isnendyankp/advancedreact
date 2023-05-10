@@ -3,6 +3,9 @@ import { data } from "../../../data";
 const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
 
+const removeItem = () =>{}
+const clearAllItems = () =>{}
+
   return (
     <div>
       {people.map((person) => {
@@ -10,9 +13,13 @@ const UseStateArray = () => {
         return (
           <div key={id} className="item">
             <h4>{name}</h4>
+            <button type="button">remove</button>
           </div>
         );
       })}
+      <button type="button" style={{ marginTop: '2rem'}}>
+        clear items
+      </button>
     </div>
   );
 };
