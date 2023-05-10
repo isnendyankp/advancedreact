@@ -17,7 +17,7 @@ const clearAllItems = () =>{}
           </div>
         );
       })}
-      <button type="button" style={{ marginTop: '2rem'}}>
+      <button type="button" style={{ marginTop: '2rem'}} className="btn">
         clear items
       </button>
     </div>
