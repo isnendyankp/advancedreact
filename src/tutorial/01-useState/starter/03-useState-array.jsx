@@ -3,7 +3,9 @@ import { data } from "../../../data";
 const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
 
-const removeItem = () =>{}
+const removeItem = (id) => {
+  setPeople(people.filter((person) => person.id !== id));
+};
 const clearAllItems = () =>{
   setPeople([]);
 };
@@ -15,7 +17,7 @@ const clearAllItems = () =>{
         return (
           <div key={id} className="item">
             <h4>{name}</h4>
-            <button type="button">remove</button>
+            <button onClick={() => removeItem(id)}>remove</button>
           </div>
         );
       })}
