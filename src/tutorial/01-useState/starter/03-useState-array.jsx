@@ -4,7 +4,9 @@ const UseStateArray = () => {
   const [people, setPeople] = React.useState(data);
 
 const removeItem = () =>{}
-const clearAllItems = () =>{}
+const clearAllItems = () =>{
+  setPeople([]);
+};
 
   return (
     <div>
@@ -17,7 +19,7 @@ const clearAllItems = () =>{}
           </div>
         );
       })}
-      <button type="button" style={{ marginTop: '2rem'}} className="btn">
+      <button type="button" style={{ marginTop: '2rem'}} className="btn" onClick={clearAllItems}>
         clear items
       </button>
     </div>
