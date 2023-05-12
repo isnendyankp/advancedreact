@@ -6,6 +6,9 @@ const UseStateObject = () => {
   const [hobby, setHobby] = useState("read books");
 
   const displayPerson = () => {
+    setName("john");
+    setAge(28);
+    setHobby("scream at the computer");
   };
 
   return (
@@ -13,7 +16,9 @@ const UseStateObject = () => {
       <h3>{name}</h3>
       <h3>{age}</h3>
       <h4>Enjoys To: {hobby}</h4>
-      <button className='btn' onClick={displayPerson}></button>
+      <button className='btn' onClick={displayPerson}>
+        show john
+      </button>
     </>
   );
 };
