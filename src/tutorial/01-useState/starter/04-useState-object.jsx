@@ -9,7 +9,9 @@ const UseStateObject = () => {
   });
 
    const displayPerson = () => {
-     setPerson({ name: "john", age: 28, hobby: "scream at the computer" });
+    //  setPerson({ name: "john", age: 28, hobby: "scream at the computer" });
+     // if same age and hoby and change name
+     setPerson({ ...person, name: "susan"});
    };
 
   return (
