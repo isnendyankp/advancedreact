@@ -4,9 +4,12 @@ const UseStateGotcha = () => {
   const [value, setValue] = useState(0);
 
   const handleClick = () => {
-    setValue(value + 1);
-    //  be careful it's the old value
-    console.log(value);
+    setValue((currentState) => {
+      // must return otherwise undefined
+      // below is the latest/current state value
+      console.log(currentState);
+    });
+    // console.log(value);
     //  so if you have any functionality
     // that relies on the latest value
     // it will be wrong !!!
