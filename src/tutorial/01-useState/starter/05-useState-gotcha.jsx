@@ -7,7 +7,8 @@ const UseStateGotcha = () => {
     setValue((currentState) => {
       // must return otherwise undefined
       // below is the latest/current state value
-      console.log(currentState);
+      const newState = currentState + 1;
+      return newState;
     });
     // console.log(value);
     //  so if you have any functionality
