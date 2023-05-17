@@ -2,11 +2,10 @@ import { useState } from 'react';
 
 const ComponentExample = () => {
   const [value, setValue] = useState(0);
-
   const sayHello = () => {
     console.log('hello there');
-    // be careful, you will have infinite loop
-    setValue(value + 1);
+    // be careful
+    // setValue(value + 1);
   };
   sayHello();
   return (
