@@ -10,8 +10,9 @@ const UseEffectBasics = () => {
 
   useEffect(() => {
     console.log('hello from useEffect');
-  });
+  }, []);
   // useEffect is a hook in React that allows you to perform side effects in function components.
+  //  adding []);  if dependency array empty [] runs only on initial render
   return (
     <div>
       <h1>value : {value}</h1>
