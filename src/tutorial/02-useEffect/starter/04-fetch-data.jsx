@@ -6,7 +6,12 @@ const FetchData = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    console.log('hello');
+    const fetchData = async () => {
+      const response = await fetch(url);
+      const users = await response.json();
+      console.log(users);
+    };
+    fetchData();
   }, []);
 
   return <h2>fetch data example</h2>;
