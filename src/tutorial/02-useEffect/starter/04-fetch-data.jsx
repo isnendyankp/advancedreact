@@ -6,6 +6,7 @@ const FetchData = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
+    // you can also setup function outside
     const fetchData = async () => {
       try {
         const response = await fetch(url);
@@ -17,7 +18,24 @@ const FetchData = () => {
     };
     fetchData();
   }, []);
-
-  return <h2>fetch data example</h2>;
+  return (
+    <section>
+      <h3>github users</h3>
+      <ul className="users">
+        {users.map((user) => {
+          const { id, login, avatar_url, html_url } = user;
+          return (
+            <li key={id}>
+              <img src={avatar_url} alt={login} />
+              <div>
+                <h5>{login}</h5>
+                <a href={html_url}>profile</a>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
 };
 export default FetchData;
