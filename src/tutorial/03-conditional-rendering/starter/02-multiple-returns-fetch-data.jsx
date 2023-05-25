@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 const url = 'https://api.github.com/users/QuincyLarson';
 
 const MultipleReturnsFetchData = () => {
+  // convention to setup booleans with isSomething
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
