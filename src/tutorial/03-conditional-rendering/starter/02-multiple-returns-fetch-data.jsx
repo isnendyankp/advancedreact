@@ -12,12 +12,15 @@ const MultipleReturnsFetchData = () => {
       try {
         const resp = await fetch(url);
         const user = await resp.json();
-        console.log(user);
+        // console.log(user);
+        setUser(user);
       } catch (error) {
         // fetch only cares about network errors
         // will work with axios
         console.log(error);
       }
+      // hide loading
+      setIsLoading(false);
     };
     fetchUser();
   }, []);
