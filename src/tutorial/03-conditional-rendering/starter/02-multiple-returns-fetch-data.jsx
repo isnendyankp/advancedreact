@@ -33,6 +33,17 @@ const MultipleReturnsFetchData = () => {
      return <h2>There was an error...</h2>;
    }
 
-  return <h2>Fetch Example</h2>;
+  return (
+    <div>
+      <img
+        style={{ width: '150px', borderRadius: '25px' }}
+        src={user.avatar_url}
+        alt={user.name}
+      />
+      <h2>{user.name}</h2>
+      <h4>works at {user.company}</h4>
+      <p>{user.bio}</p>
+    </div>
+  );
 };
 export default MultipleReturnsFetchData;
