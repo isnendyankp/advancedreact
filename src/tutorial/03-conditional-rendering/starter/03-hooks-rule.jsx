@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+// Learn React hooks rule
 const Example = () => {
   const [condition, setCondition] = useState(true);
   if (condition) {
