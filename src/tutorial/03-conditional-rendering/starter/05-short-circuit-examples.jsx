@@ -18,7 +18,22 @@ const ShortCircuitExamples = () => {
   const [user, setUser] = useState({ name: 'john' });
   const [isEditing, setIsEditing] = useState(false);
 
-  return <h2>short circuit - examples</h2>;
+  return (
+    <div>
+      {/* content inside element */}
+      <h2>{text || 'default value'}</h2>
+      {/* toggle element */}
+      {text && (
+        <div>
+          <h2> whatever return</h2>
+          <h2>{name}</h2>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default ShortCircuitExamples;
+
+// <h2>{name || 'default value'}</h2> display susan
+// <h2>{text || 'default value'}</h2> display default value
