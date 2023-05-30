@@ -22,3 +22,10 @@ const ShortCircuitOverview = () => {
   );
 };
 export default ShortCircuitOverview;
+
+
+// return display :
+// Falsy OR : Hello World
+// Falsy AND
+// Truthy OR Susan
+// Truthy AND Hello World
