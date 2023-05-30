@@ -29,6 +29,17 @@ const ShortCircuitExamples = () => {
           <h2>{name}</h2>
         </div>
       )}
+      {/* toggle component */}
+      {user && <SomeComponent name={user.name} />}
+    </div>
+  );
+};
+
+const SomeComponent = ({ name }) => {
+  return (
+    <div>
+      <h4>Congratulation</h4>
+      <h2>{name}</h2>
     </div>
   );
 };
