@@ -9,17 +9,17 @@ import { useState } from 'react';
 const ToggleChallenge = () => {
   const [showAlert, setShowAlert] = useState(false);
 
-  const toggleAlert = () => {
-    if (showAlert) {
-      setShowAlert(false);
-      return;
-    }
-    setShowAlert(true);
-  };
-
+//   const toggleAlert = () => {
+//     if (showAlert) {
+//       setShowAlert(false);
+//       return;
+//     }
+//     setShowAlert(true);
+//   };
+// if true alert will be show at display & if false alert will be hiding
   return (
     <div>
-      <button className="btn" onClick={toggleAlert}>
+      <button className="btn" onClick={() => setShowAlert(!showAlert)}>
         toggle alert
       </button>
       {showAlert && <Alert />}
@@ -32,3 +32,5 @@ const Alert = () => {
 };
 
 export default ToggleChallenge;
+
+
