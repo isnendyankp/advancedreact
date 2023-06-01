@@ -1,4 +1,4 @@
-// create state value:1. user - default value null
+// create state value: *user - default value null
 //create two functions
 
 /*-login - set's user equal to object with name property
@@ -11,6 +11,8 @@
 import { useState } from 'react';
 
 const UserChallenge = () => {
+  const [user, setUser] = useState(null);
+
   return <h2>user challenge</h2>;
 };
 
