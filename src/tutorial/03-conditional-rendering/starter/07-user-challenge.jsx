@@ -13,6 +13,14 @@ import { useState } from 'react';
 const UserChallenge = () => {
   const [user, setUser] = useState(null);
 
+    const login = () => {
+      // normally connect to db or api
+      setUser({ name: 'vegan food truck' });
+    };
+    const logout = () => {
+      setUser(null);
+    };
+
   return <h2>user challenge</h2>;
 };
 
