@@ -1,3 +1,15 @@
+// Will Cover After 03-conditional-rendering
+
+// Setup Challenge :
+
+// create state value
+
+// in jsx return button which toggles state value
+
+// based on condition return second component (simple return)
+
+// inside second component create useEffect and run it only on initial render
+
 import { useEffect, useState } from 'react';
 
 const CleanupFunction = () => {
