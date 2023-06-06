@@ -22,3 +22,21 @@ Works but eventually too many index tabs
 
 * rename back to Navbar.jsx
 * create index.jsx
+
+
+Project Structure - Named Exports
+/tutorial/04-project-structure/starter
+
+only makes sense if you have quite a few files
+
+create Pages directory
+
+setup two components Home.jsx and About.jsx
+
+import both in the App.jxs
+
+import Home from 'pathToFolder/Pages/Home'; import About from 'pathToFolder/Pages/About';
+
+A lot of work/lines of code
+
+create index.jsx
