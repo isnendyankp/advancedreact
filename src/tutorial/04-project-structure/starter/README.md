@@ -40,3 +40,17 @@ import Home from 'pathToFolder/Pages/Home'; import About from 'pathToFolder/Page
 A lot of work/lines of code
 
 create index.jsx
+
+S6-118
+Project Structure - Export Group
+/tutorial/04-project-structure/starter
+
+-create Example directory
+-setup two components (setup simple returns) and index.jsx file
+-in index.jsx setup return and render both components (import)
+-import/render index.jsx in App.jsx
+
+Project Structure - Extra Extensions
+
+-code spell checker - works well with code and documents.
+-glean - easy extract JSX into a new component
