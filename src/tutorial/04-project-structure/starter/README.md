@@ -54,3 +54,16 @@ Project Structure - Extra Extensions
 
 -code spell checker - works well with code and documents.
 -glean - easy extract JSX into a new component
+
+S6-119 Leverage Javascript
+
+Setup Challenge:
+
+-take a look at the people in array in data.js
+-create List.jsx component
+-in List.jsx import and iterate over people (data)
+-for now just render name
+-once you have list setup separate Person.jsx component
+    -try glean extension
+-in Person render
+    -name, nickName, image
