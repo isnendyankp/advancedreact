@@ -14,6 +14,9 @@ const ControlledInputs = () => {
         </label>
         <input type="email" id="email" className="form-input" />
       </div>
+      <button type="submit" className="btn btn-block">
+        submit
+      </button>
     </form>
   );
 };
