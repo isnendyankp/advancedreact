@@ -4,7 +4,8 @@
 import { useState } from "react";
 
 const handleChange = (e) => {
-
+  console.log (e.target.name);
+  console.log(e.target.value);
 }
 
 const ControlledInputs = () => {
