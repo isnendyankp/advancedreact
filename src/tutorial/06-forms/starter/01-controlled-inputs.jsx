@@ -3,14 +3,17 @@
 // setup onSubmit
 import { useState } from "react";
 
-const handleChange = (e) => {
-  console.log (e.target.name);
-  console.log(e.target.value);
-}
+
 
 const ControlledInputs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+
+  const handleChange = (e) => {
+    // console.log (e.target.name);
+    // console.log(e.target.value);
+    setName(e.target.value);
+  };
   return (
     <form className="form">
       <h4>controlled inputs</h4>
