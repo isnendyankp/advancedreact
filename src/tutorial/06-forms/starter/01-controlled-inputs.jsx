@@ -9,13 +9,20 @@ const ControlledInputs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleChange = (e) => {
-    // console.log (e.target.name);
-    // console.log(e.target.value);
-    setName(e.target.value);
+  // const handleChange = (e) => {
+  //   // console.log (e.target.name);
+  //   // console.log(e.target.value);
+  //   setName(e.target.value);
+  // };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // do something
+    console.log(name, email);
   };
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <h4>controlled inputs</h4>
       <div className="form-row">
         <label htmlFor="name" className="form-label">
