@@ -1,6 +1,11 @@
 // setup state values
 // add value and onChange to each input
 // setup onSubmit
+import { useState } from "react";
+
+const handleChange = (e) => {
+
+}
 
 const ControlledInputs = () => {
   const [name, setName] = useState('');
@@ -12,7 +17,13 @@ const ControlledInputs = () => {
         <label htmlFor="name" className="form-label">
           name
         </label>
-        <input type="text" id="name" className="form-input" />
+        <input
+          type="text"
+          id="name"
+          className="form-input"
+          value={name}
+          onChange={handleChange}
+        />
       </div>
       <div className="form-row">
         <label htmlFor="email" className="form-label">
