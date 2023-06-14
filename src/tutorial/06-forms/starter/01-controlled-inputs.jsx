@@ -1,4 +1,10 @@
+// setup state values
+// add value and onChange to each input
+// setup onSubmit
+
 const ControlledInputs = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   return (
     <form className="form">
       <h4>controlled inputs</h4>
