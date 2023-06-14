@@ -26,14 +26,20 @@ const ControlledInputs = () => {
           id="name"
           className="form-input"
           value={name}
-          onChange={handleChange}
+          onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div className="form-row">
         <label htmlFor="email" className="form-label">
           email
         </label>
-        <input type="email" id="email" className="form-input" />
+        <input
+          type="email"
+          className="form-input"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </div>
       <button type="submit" className="btn btn-block">
         submit
