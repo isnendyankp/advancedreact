@@ -18,9 +18,15 @@ import { useState } from 'react';
 const UserChallenge = () => {
   const [name, setName] = useState('');
   const [users, setUsers] = useState([]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('form submitted');
+  };
+
   return (
     <div>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h4>Add User</h4>
         <div className="form-row">
           <label htmlFor="name" className="form-label">
