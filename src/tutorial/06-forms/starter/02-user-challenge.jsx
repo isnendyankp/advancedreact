@@ -13,8 +13,11 @@
 // Extra Challenge
 
 // add button and setup functionality to remove user
+import { useState } from 'react';
 
 const UserChallenge = () => {
+  const [name, setName] = useState('');
+  const [users, setUsers] = useState('');
   return (
     <div>
       <form className='form'>
