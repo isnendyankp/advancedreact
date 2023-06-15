@@ -1,3 +1,19 @@
+// setup controlled input (name input)
+
+// setup onSubmit (for now just placeholder)
+
+// import data array (first array) from data
+
+// create another state value (data as default)
+
+// iterate over and display right after form (h4)
+
+// when user submits the form add new person to the list
+
+// Extra Challenge
+
+// add button and setup functionality to remove user
+
 const UserChallenge = () => {
   return (
     <div>
