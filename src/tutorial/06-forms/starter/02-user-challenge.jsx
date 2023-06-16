@@ -22,6 +22,8 @@ const UserChallenge = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // if no value, do nothing
+    if (!name) return;
     console.log('form submitted');
   };
 
