@@ -51,7 +51,12 @@ const UserChallenge = () => {
       {/* The users.map function is used to perform operations on each element in an array users, */}
       {users.map((user) => {
         // the use of key={user.id} on elements in React components is used to give a unique identity to each element in the list (list).
-        return <div key={user.id}></div>;
+        return (
+          <div key={user.id}>
+            {/* user.name = used to insert the value of the name property on the user object into the <h4> heading element. */}
+            <h4>{user.name}</h4>
+          </div>
+        );
       })}
     </div>
   );
