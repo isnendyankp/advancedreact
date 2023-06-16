@@ -14,10 +14,11 @@
 
 // add button and setup functionality to remove user
 import { useState } from 'react';
+import { data } from '../../../data';
 
 const UserChallenge = () => {
   const [name, setName] = useState('');
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([data]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
