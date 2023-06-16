@@ -18,7 +18,7 @@ import { data } from '../../../data';
 
 const UserChallenge = () => {
   const [name, setName] = useState('');
-  const [users, setUsers] = useState([data]);
+  const [users, setUsers] = useState(data);
 
   const handleSubmit = (e) => {
     e.preventDefault();
