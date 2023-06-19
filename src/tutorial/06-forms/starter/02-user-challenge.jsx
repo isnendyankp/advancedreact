@@ -24,6 +24,9 @@ const UserChallenge = () => {
     e.preventDefault();
     // if no value, do nothing
     if (!name) return;
+    // if value, setup new user and add to current users
+    const fakeId = Date.now();
+    console.log(fakeId);
     console.log('form submitted');
   };
 
