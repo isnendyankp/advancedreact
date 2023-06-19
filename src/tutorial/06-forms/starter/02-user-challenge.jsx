@@ -26,14 +26,17 @@ const UserChallenge = () => {
     if (!name) return;
     // if value, setup new user and add to current users
     const fakeId = Date.now();
-    // console.log(fakeId);
     // const newUser = { id: fakeId, name: name };
     const newUser = { id: fakeId, name };
     const updatedUsers = [...users, newUser];
     setUsers(updatedUsers);
-    console.log('form submitted');
     // set back to empty
     setName('');
+  };
+
+  const removeUser = (id) => {
+    const updatedUsers = users.filter((person) => person.id !== id);
+    setUsers(updatedUsers);
   };
 
   return (
