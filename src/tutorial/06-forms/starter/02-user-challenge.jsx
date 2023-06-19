@@ -70,7 +70,7 @@ const UserChallenge = () => {
             {/* user.name = used to insert the value of the name property on the user object into the <h4> heading element. */}
             <h4>{user.name}</h4>
             {/* add button for remove */}
-            <button onClick={() => {}} className="btn">
+            <button onClick={() => removeUser(user.id)} className="btn">
               remove
             </button>
           </div>
