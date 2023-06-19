@@ -32,6 +32,8 @@ const UserChallenge = () => {
     const updatedUsers = [...users, newUser];
     setUsers(updatedUsers);
     console.log('form submitted');
+    // set back to empty
+    setName('');
   };
 
   return (
