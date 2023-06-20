@@ -1,4 +1,5 @@
 const MultipleInputs = () => {
+  const [user, setUser] = useState({})
   return (
     <div>
       <form className='form'>
