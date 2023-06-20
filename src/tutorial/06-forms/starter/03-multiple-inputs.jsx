@@ -4,6 +4,9 @@ const MultipleInputs = () => {
     email: '',
     password: '',
   });
+  const handleChange = ()=>{
+    
+  }
   return (
     <div>
       <form className='form'>
