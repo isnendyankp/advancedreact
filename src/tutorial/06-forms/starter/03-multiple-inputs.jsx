@@ -1,12 +1,13 @@
+import { useState } from 'react';
 const MultipleInputs = () => {
   const [user, setUser] = useState({
     name: '',
     email: '',
     password: '',
   });
-  const handleChange = ()=>{
-
-  }
+  const handleChange = (e) => {
+    console.log(e.target.value);
+  };
   return (
     <div>
       <form className="form">
