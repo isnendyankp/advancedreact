@@ -12,6 +12,11 @@ const MultipleInputs = () => {
     // update specific property in the object with value
     setUser({ ...user, [e.target.name]: e.target.value });
   };
+
+  const handleSubmit = () => {
+    e.preventDefault();
+    console.log(user);
+  };
   return (
     <div>
       <form className="form">
