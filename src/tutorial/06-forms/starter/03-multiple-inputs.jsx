@@ -6,6 +6,8 @@ const MultipleInputs = () => {
     password: '',
   });
   const handleChange = (e) => {
+    // .name for target name="name", name="email", name="password"
+    console.log(e.target.name);
     console.log(e.target.value);
   };
   return (
