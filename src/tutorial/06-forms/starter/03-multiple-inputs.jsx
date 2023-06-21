@@ -9,6 +9,8 @@ const MultipleInputs = () => {
     // .name for target name="name", name="email", name="password"
     console.log(e.target.name);
     console.log(e.target.value);
+    // update specific property in the object with value
+    setUser({ ...user, [e.target.name]: e.target.value });
   };
   return (
     <div>
