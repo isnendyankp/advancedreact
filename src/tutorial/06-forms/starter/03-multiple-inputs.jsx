@@ -19,7 +19,7 @@ const MultipleInputs = () => {
   };
   return (
     <div>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h4>Multiple Inputs</h4>
         {/* name */}
         <div className="form-row">
