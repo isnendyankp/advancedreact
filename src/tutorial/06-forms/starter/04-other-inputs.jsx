@@ -17,6 +17,7 @@ const OtherInputs = () => {
           <label htmlFor="shipping"> Free Shipping </label>
           <input
             type="checkbox"
+            checked={shipping}
             id="shipping"
             name="shipping"
           />
