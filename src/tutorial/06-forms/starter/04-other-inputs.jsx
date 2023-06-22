@@ -20,6 +20,7 @@ const OtherInputs = () => {
             checked={shipping}
             id="shipping"
             name="shipping"
+            onChange={handleShipping}
           />
         </div>
         <div className="form-row" style={{ textAlign: 'left' }}>
