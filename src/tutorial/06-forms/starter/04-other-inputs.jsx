@@ -9,6 +9,10 @@ const OtherInputs = () => {
     setShipping(e.target.checked);
   };
 
+  const handleFramework = (e) => {
+    
+  };
+
   return (
     <div>
       <form className="form">
