@@ -33,7 +33,9 @@ const OtherInputs = () => {
             Framework
           </label>
           <select name="framework" id="framework">
-            {frameworks.map((framework) => {})}
+            {frameworks.map((framework) => {
+              return <option key={framework}>{framework}</option>;
+            })}
           </select>
         </div>
         <button type="submit" className="btn btn-block">
