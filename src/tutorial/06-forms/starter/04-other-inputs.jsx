@@ -32,6 +32,12 @@ const OtherInputs = () => {
           <label htmlFor="framework" className="form-label">
             Framework
           </label>
+          <select
+            name='framework'
+            id='framework'
+          >
+
+          </select>
         </div>
         <button type="submit" className="btn btn-block">
           submit
