@@ -32,7 +32,12 @@ const OtherInputs = () => {
           <label htmlFor="framework" className="form-label">
             Framework
           </label>
-          <select name="framework" id="framework">
+          <select
+            name="framework"
+            id="framework"
+            value={framework}
+            onChange={handleFramework}
+          >
             {frameworks.map((framework) => {
               return <option key={framework}>{framework}</option>;
             })}
