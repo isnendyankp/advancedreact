@@ -10,7 +10,7 @@ const OtherInputs = () => {
   };
 
   const handleFramework = (e) => {
-    
+    setFramework(e.target.value);
   };
 
   return (
