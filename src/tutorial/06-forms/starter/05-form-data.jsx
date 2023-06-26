@@ -10,6 +10,10 @@ const UncontrolledInputs = () => {
     // get values one by one.Code name can be change to email for example
     const name = formData.get('name');
     console.log(name);
+    // get all of them / get all values
+    const newUser = Object.fromEntries(formData);
+    // do something (post request, add to list, etc)
+    console.log(newUser);
   };
   return (
     <div>
