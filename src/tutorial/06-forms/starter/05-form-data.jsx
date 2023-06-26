@@ -7,6 +7,9 @@ const UncontrolledInputs = () => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     console.log(formData);
+    // get values one by one.Code name can be change to email for example
+    const name = formData.get('name');
+    console.log(name);
   };
   return (
     <div>
