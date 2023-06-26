@@ -14,6 +14,8 @@ const UncontrolledInputs = () => {
     const newUser = Object.fromEntries(formData);
     // do something (post request, add to list, etc)
     console.log(newUser);
+    // Gotcha - re-render won't clear out the values
+    setValue(value + 1);
   };
   return (
     <div>
