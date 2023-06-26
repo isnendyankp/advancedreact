@@ -16,6 +16,8 @@ const UncontrolledInputs = () => {
     console.log(newUser);
     // Gotcha - re-render won't clear out the values
     setValue(value + 1);
+    // reset values
+    e.currentTarget.reset();
   };
   return (
     <div>
