@@ -5,7 +5,9 @@ const UseRefBasics = () => {
   // current property null
   const refContainer = useRef(null);
   console.log(refContainer);
-
+  const isMounted = useRef(false);
+  console.log(isMounted);
+  
   useEffect(() => {
     console.log(refContainer);
   });
