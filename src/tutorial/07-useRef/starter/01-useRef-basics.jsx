@@ -7,13 +7,15 @@ const UseRefBasics = () => {
   console.log(refContainer);
   const isMounted = useRef(false);
   console.log(isMounted);
-  
+
   useEffect(() => {
-    console.log(refContainer);
+    
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const name = refContainer.current.value;
+    console.log(name);
   };
 
   return (
