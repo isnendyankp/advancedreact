@@ -4,13 +4,15 @@ const UseRefBasics = () => {
   const [value, setValue] = useState(0);
   // current property null
   const refContainer = useRef(null);
-  console.log(refContainer);
   const isMounted = useRef(false);
-  console.log(isMounted);
 
-  useEffect(() => {
-    
-  });
+   useEffect(() => {
+     if (!isMounted.current) {
+       isMounted.current = true;
+       return;
+     }
+     console.log('re-render');
+   }, [value]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
