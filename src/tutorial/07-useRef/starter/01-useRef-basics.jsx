@@ -4,6 +4,11 @@ const UseRefBasics = () => {
   const [value, setValue] = useState(0);
   // current property null
   const refContainer = useRef(null);
+  console.log(refContainer);
+
+  useEffect(() => {
+    console.log(refContainer);
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
