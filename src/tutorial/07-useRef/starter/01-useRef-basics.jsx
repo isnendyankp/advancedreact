@@ -7,6 +7,11 @@ const UseRefBasics = () => {
   const isMounted = useRef(false);
 
    useEffect(() => {
+     // console.log(refContainer.current);
+     refContainer.current.focus();
+   });
+
+   useEffect(() => {
      if (!isMounted.current) {
        isMounted.current = true;
        return;
