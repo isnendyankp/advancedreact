@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const ToggleExample = () => {
-  const [show, setShow] = useState(false);
+  
   return (
     <div>
       <h4>toggle custom hook</h4>
