@@ -30,3 +30,5 @@ const useFetchPerson = (url) => {
 
   return { isLoading, isError, user };
 }
+
+export default useFetchPerson;
