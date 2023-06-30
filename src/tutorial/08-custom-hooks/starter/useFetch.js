@@ -30,3 +30,8 @@ const useFetchPerson = (url) => {
     // invoke fetch data
     fetchData();
   }, []);
+
+   return { isLoading, isError, data };
+};
+
+export default useFetch;
