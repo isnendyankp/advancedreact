@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h5>CONTEXT API</h5>
-      <NavLinks />
+      <NavLinks user={user} logout={logout} />
     </nav>
   );
 }
-
+// pass prop down on user={user} logout={logout}
 export default Navbar
