@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react';
 import NavLinks from './NavLinks';
 
 const Navbar = () => {
@@ -14,6 +14,6 @@ const Navbar = () => {
       <NavLinks user={user} logout={logout} />
     </nav>
   );
-}
+};
 // pass prop down on user={user} logout={logout}
-export default Navbar
+export default Navbar;

@@ -1,9 +1,7 @@
 import React from 'react'
 
-const UserContainer = () => {
-  return (
-    <div>UserContainer</div>
-  )
+const UserContainer = ({user, logout}) => {
+  return 
 }
 
 export default UserContainer
