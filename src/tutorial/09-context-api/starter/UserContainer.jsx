@@ -3,13 +3,19 @@ import React from 'react'
 const UserContainer = ({user, logout}) => {
   return (
     <div className="user-container">
-      <p>Hello There, {user?.name}</p>
-
-      <button className="btn" onClick={logout}>
-        logout
-      </button>
+      {user ? (
+        <>
+          <p>Hello There, {user.name.toUpperCase()}</p>
+          <button type="button" className="btn" onClick={logout}>
+            logout
+          </button>
+        </>
+      ) : (
+        <p>Please Login</p>
+      )}
     </div>
   );
 }
+// if user null, in UserContainer display please login
 
 export default UserContainer
