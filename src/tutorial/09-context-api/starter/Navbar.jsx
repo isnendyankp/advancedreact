@@ -3,8 +3,6 @@ import NavLinks from './NavLinks';
 
 export const NavbarContext = createContext();
 
-console.log(NavbarContext.Provider);
-
 const Navbar = () => {
   // create useState with object name is bob
   const [user, setUser] = useState({ name: 'bob' });
