@@ -1,7 +1,12 @@
 import React from 'react'
+import { useContext } from 'react';
+import { NavbarContext } from './Navbar';
 
 const UserContainer = () => {
-  return 'hello world';
+// by pass context API between Navbar and User Container
+// by pass with no getting any props on Navlinks
+const { user, logout } = useContext(NavbarContext)
+
   return (
     <div className="user-container">
       {user ? (
