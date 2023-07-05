@@ -3,6 +3,8 @@ import NavLinks from './NavLinks';
 
 export const NavbarContext = createContext();
 
+console.log(NavbarContext.Provider);
+
 const Navbar = () => {
   // create useState with object name is bob
   const [user, setUser] = useState({ name: 'bob' });
@@ -11,11 +13,17 @@ const Navbar = () => {
     setUser(null);
   };
   return (
-    <nav className="navbar">
-      <h5>CONTEXT API</h5>
-      <NavLinks />
-    </nav>
+    <NavbarContext.Provider value={{ user, logout }}>
+      <nav className="navbar">
+        <h5>CONTEXT API</h5>
+        <NavLinks />
+      </nav>
+    </NavbarContext.Provider>
   );
 };
-// pass prop down on user={user} logout={logout}
+
 export default Navbar;
+
+// pass prop down on user={user} logout={logout}
+// <NavbarContext.Provider value={{ user, logout }}> : 
+// Provider = property for createContext
