@@ -1,6 +1,7 @@
 import React from 'react'
 
-const UserContainer = ({user, logout}) => {
+const UserContainer = () => {
+  return 'hello world';
   return (
     <div className="user-container">
       {user ? (
