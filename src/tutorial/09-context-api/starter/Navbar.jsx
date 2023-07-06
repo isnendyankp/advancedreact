@@ -5,7 +5,8 @@ import NavLinks from './NavLinks';
 export const NavbarContext = createContext();
 
 // custom hook
-export const useAppContext = () => 
+// invoke this useContext once & provide the NavbarContext
+export const useAppContext = () => useContext(NavbarContext);
 
 const Navbar = () => {
   // create useState with object name is bob
