@@ -1,6 +1,6 @@
 import { useState, createContext } from 'react';
 import NavLinks from './NavLinks';
-
+import { useContext } from 'react';
 
 export const NavbarContext = createContext();
 
