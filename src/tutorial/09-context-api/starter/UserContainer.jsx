@@ -1,10 +1,12 @@
 // import { useContext } from 'react';
 // import { NavbarContext } from './Navbar';
+import { useAppContext } from "./Navbar";
 
 const UserContainer = () => {
 // by pass context API between Navbar and User Container
 // by pass with no getting any props on Navlinks
-const { user, logout } = useContext(NavbarContext)
+// useAppContext already replace from useContext(NavbarContext) 
+const { user, logout } = useAppContext();
 
   return (
     <div className="user-container">
