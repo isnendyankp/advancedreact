@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import { NavbarContext } from './Navbar';
+// import { useContext } from 'react';
+// import { NavbarContext } from './Navbar';
 
 const UserContainer = () => {
 // by pass context API between Navbar and User Container
