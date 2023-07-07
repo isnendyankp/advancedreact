@@ -7,6 +7,10 @@ const ReducerBasics = () => {
     let newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
   };
+
+  const clearList = () => {
+    setPeople([]);
+  }
   return (
     <div>
       {people.map((person) => {
