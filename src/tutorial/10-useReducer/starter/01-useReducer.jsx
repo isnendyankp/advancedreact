@@ -50,3 +50,9 @@ const ReducerBasics = () => {
 };
 
 export default ReducerBasics;
+
+// Challenge step info:
+// 1. let's add reset functionality
+// 2. create function that set's people back to data array
+// 3. create another button, similar to clear just for reset
+// 4. use conditional rendering to toggle between the buttons, depending on people value
