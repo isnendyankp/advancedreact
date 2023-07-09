@@ -2,7 +2,11 @@ import React from 'react';
 import { useState, useReducer } from 'react';
 import { data } from '../../../data';
 
-
+// default state
+const defaultState = {
+  people: data,
+  
+};
 
 // reducer function
 const reducer = () =>{
@@ -11,7 +15,7 @@ const reducer = () =>{
 
 const ReducerBasics = () => {
 
-  useReducer(reducer, defaultstate)
+  useReducer(reducer, defaultState)
 
   const [people, setPeople] = useState(data);
 
@@ -69,3 +73,4 @@ export default ReducerBasics;
 // 4. use conditional rendering to toggle between the buttons, depending on people value
 // 5. pass in with create useReducer for calling default state & reducer to manipulate state
 // 6. cr8 base reducer function
+// 7. cr8 base default state
