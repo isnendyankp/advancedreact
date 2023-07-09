@@ -1,20 +1,26 @@
 import React from 'react';
+import { useState, useReducer } from 'react';
 import { data } from '../../../data';
+
+
+
 const ReducerBasics = () => {
-  const [people, setPeople] = React.useState(data);
+
+  useReducer(reducerfunction, defaultstate)
+
+  const [people, setPeople] = useState(data);
 
   const removeItem = (id) => {
-    let newPeople = people.filter((person) => person.id !== id);
-    setPeople(newPeople);
+    // let newPeople = people.filter((person) => person.id !== id);
+    // setPeople(newPeople);
   };
 
   const clearList = () => {
-    setPeople([]);
+    // setPeople([]);
   };
-  // add reset functionality
-  // create function that set's people back to data array
+
   const resetList = () => {
-    setPeople(data);
+    // setPeople(data);
   };
 
   return (
@@ -56,3 +62,4 @@ export default ReducerBasics;
 // 2. create function that set's people back to data array
 // 3. create another button, similar to clear just for reset
 // 4. use conditional rendering to toggle between the buttons, depending on people value
+// 5. pass in with create useReducer for calling default state & reducer to manipulate state
