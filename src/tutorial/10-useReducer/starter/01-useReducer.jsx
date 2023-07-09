@@ -15,7 +15,7 @@ const reducer = () =>{
 
 const ReducerBasics = () => {
 
-  useReducer(reducer, defaultState)
+  const [state, dispatch] = useReducer(reducer, defaultState);
 
   const [people, setPeople] = useState(data);
 
@@ -74,3 +74,6 @@ export default ReducerBasics;
 // 5. pass in with create useReducer for calling default state & reducer to manipulate state
 // 6. cr8 base reducer function
 // 7. cr8 base default state
+// 8. in state were getting back state value & function but in reducer were getting back state & dispatch
+// 9. const [people, setPeople] = useState(data); = getting back people: state value, setPeople: function
+// 10. const [state, dispatch] = useReducer(reducer, defaultState); = getting back state & dispatch
