@@ -4,9 +4,14 @@ import { data } from '../../../data';
 
 
 
+// reducer function
+const reducer = () =>{
+
+}
+
 const ReducerBasics = () => {
 
-  useReducer(reducerfunction, defaultstate)
+  useReducer(reducer, defaultstate)
 
   const [people, setPeople] = useState(data);
 
@@ -63,3 +68,4 @@ export default ReducerBasics;
 // 3. create another button, similar to clear just for reset
 // 4. use conditional rendering to toggle between the buttons, depending on people value
 // 5. pass in with create useReducer for calling default state & reducer to manipulate state
+// 6. cr8 base reducer function
