@@ -9,7 +9,7 @@ const defaultState = {
 };
 
 // reducer function
-const reducer = () =>{
+const reducer = (state, action) =>{
 
 }
 
@@ -76,3 +76,4 @@ export default ReducerBasics;
 // 9. const [people, setPeople] = useState(data); = getting back people: state value, setPeople: function
 // 10. const [state, dispatch] = useReducer(reducer, defaultState); = getting back state & dispatch
 // 11. remove getting back state but add access state on div {state.people.map((person) => {const { id, name } = person;
+// 12. get 2 things on reducer function (state, action)
