@@ -23,7 +23,7 @@ const ReducerBasics = () => {
   };
 
   const clearList = () => {
-    // setPeople([]);
+    dispatch({ type: 'CLEAR_LIST' });
   };
 
   const resetList = () => {
@@ -77,3 +77,4 @@ export default ReducerBasics;
 // 10. const [state, dispatch] = useReducer(reducer, defaultState); = getting back state & dispatch
 // 11. remove getting back state but add access state on div {state.people.map((person) => {const { id, name } = person;
 // 12. get 2 things on reducer function (state, action)
+// 13. add action on clearlist with dispatch(action) & type CLEAR_LIST 
