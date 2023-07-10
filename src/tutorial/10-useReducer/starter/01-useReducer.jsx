@@ -10,7 +10,9 @@ const defaultState = {
 
 // reducer function
 const reducer = (state, action) =>{
-
+  if (action.type === CLEAR_LIST) {
+    
+  }
 }
 
 const ReducerBasics = () => {
@@ -78,3 +80,4 @@ export default ReducerBasics;
 // 11. remove getting back state but add access state on div {state.people.map((person) => {const { id, name } = person;
 // 12. get 2 things on reducer function (state, action)
 // 13. add action on clearlist with dispatch(action) & type CLEAR_LIST 
+// 14. check action type call CLEAR_LIST on reducer function
