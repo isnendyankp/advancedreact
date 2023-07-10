@@ -11,7 +11,7 @@ const defaultState = {
 // reducer function
 const reducer = (state, action) =>{
   if (action.type === CLEAR_LIST) {
-    
+    return { ...state, people: [] };
   }
 }
 
@@ -81,3 +81,4 @@ export default ReducerBasics;
 // 12. get 2 things on reducer function (state, action)
 // 13. add action on clearlist with dispatch(action) & type CLEAR_LIST 
 // 14. check action type call CLEAR_LIST on reducer function
+// 15. return new value after check CLEAR_LIST
