@@ -29,7 +29,7 @@ const ReducerBasics = () => {
   };
 
   const clearList = () => {
-    dispatch({ type: 'CLEAR_LIST' });
+    dispatch({ type: CLEAR_LIST });
   };
 
   const resetList = () => {
@@ -86,3 +86,5 @@ export default ReducerBasics;
 // 13. add action on clearlist with dispatch(action) & type CLEAR_LIST 
 // 14. check action type call CLEAR_LIST on reducer function
 // 15. return new value after check CLEAR_LIST
+// 16. cr8 3 equal function with string: 'CLEAR_LIST', 'RESET_LIST', 'REMOVE_ITEM'
+// 17. matching CLEAR_LIST on reducer function at check type with dispatch CLEAR_LIST(ReducerBasics) 
