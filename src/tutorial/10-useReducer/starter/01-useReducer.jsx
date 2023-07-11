@@ -33,6 +33,7 @@ const ReducerBasics = () => {
   };
 
   const resetList = () => {
+    dispatch({ type: RESET_LIST });
     // setPeople(data);
   };
 
@@ -88,3 +89,4 @@ export default ReducerBasics;
 // 15. return new value after check CLEAR_LIST
 // 16. cr8 3 equal function with string: 'CLEAR_LIST', 'RESET_LIST', 'REMOVE_ITEM'
 // 17. matching CLEAR_LIST on reducer function at check type with dispatch CLEAR_LIST(ReducerBasics) 
+// 18. add dispatch RESET_LIST on ReducerBasics: dispatch({ type: RESET_LIST });
