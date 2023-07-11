@@ -17,6 +17,9 @@ const reducer = (state, action) =>{
   if (action.type === CLEAR_LIST) {
     return { ...state, people: [] };
   }
+  if (action.type === RESET_LIST) {
+    return { ...state, people: data };
+  }
 }
 
 const ReducerBasics = () => {
@@ -90,3 +93,4 @@ export default ReducerBasics;
 // 16. cr8 3 equal function with string: 'CLEAR_LIST', 'RESET_LIST', 'REMOVE_ITEM'
 // 17. matching CLEAR_LIST on reducer function at check type with dispatch CLEAR_LIST(ReducerBasics) 
 // 18. add dispatch RESET_LIST on ReducerBasics: dispatch({ type: RESET_LIST });
+// 19. add RESET_LIST check type & returning value data on reducer
