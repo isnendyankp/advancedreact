@@ -27,6 +27,7 @@ const ReducerBasics = () => {
   const [state, dispatch] = useReducer(reducer, defaultState);
 
   const removeItem = (id) => {
+    dispatch({ type: REMOVE_ITEM });
     // let newPeople = people.filter((person) => person.id !== id);
     // setPeople(newPeople);
   };
@@ -94,3 +95,4 @@ export default ReducerBasics;
 // 17. matching CLEAR_LIST on reducer function at check type with dispatch CLEAR_LIST(ReducerBasics) 
 // 18. add dispatch RESET_LIST on ReducerBasics: dispatch({ type: RESET_LIST });
 // 19. add RESET_LIST check type & returning value data on reducer
+// 20. add dispatch for type REMOVE_ITEM on ReducerBasics
