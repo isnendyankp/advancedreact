@@ -21,7 +21,9 @@ const reducer = (state, action) =>{
     return { ...state, people: data };
   }
   if (action.type === REMOVE_ITEM) {
-
+    let newPeople = state.people.filter(
+      (person) => person.id !== action.payload.id
+    );
   }
 }
 
@@ -99,3 +101,4 @@ export default ReducerBasics;
 // 20. add dispatch for type REMOVE_ITEM on ReducerBasics
 // 21. add other property = payload which is object & have value (id).
 // 22. add REMOVE_ITEM check type on reducer
+// 23. cr8 newPeople with filter for targeting person id = let newPeople = state.people.filter((person) => person.id !== action.payload.id);
