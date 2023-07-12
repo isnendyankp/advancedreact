@@ -20,6 +20,9 @@ const reducer = (state, action) =>{
   if (action.type === RESET_LIST) {
     return { ...state, people: data };
   }
+  if (action.type === REMOVE_ITEM) {
+
+  }
 }
 
 const ReducerBasics = () => {
@@ -95,3 +98,4 @@ export default ReducerBasics;
 // 19. add RESET_LIST check type & returning value data on reducer
 // 20. add dispatch for type REMOVE_ITEM on ReducerBasics
 // 21. add other property = payload which is object & have value (id).
+// 22. add REMOVE_ITEM check type on reducer
