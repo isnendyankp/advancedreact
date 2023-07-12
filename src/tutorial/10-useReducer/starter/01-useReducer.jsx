@@ -26,6 +26,8 @@ const reducer = (state, action) =>{
     );
     return { ...state, people: newPeople };
   }
+  // return state;
+  throw new Error(`No matching "${action.type}" - action type`);
 }
 
 const ReducerBasics = () => {
@@ -104,3 +106,4 @@ export default ReducerBasics;
 // 22. add REMOVE_ITEM check type on reducer
 // 23. cr8 newPeople with filter for targeting person id = let newPeople = state.people.filter((person) => person.id !== action.payload.id);
 // 24. add return REMOVE_ITEM & make property people change the value to newPeople
+// 25. defines an error being thrown with a specific error message.
