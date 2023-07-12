@@ -27,9 +27,7 @@ const ReducerBasics = () => {
   const [state, dispatch] = useReducer(reducer, defaultState);
 
   const removeItem = (id) => {
-    dispatch({ type: REMOVE_ITEM });
-    // let newPeople = people.filter((person) => person.id !== id);
-    // setPeople(newPeople);
+    dispatch({ type: REMOVE_ITEM, payload: { id } });
   };
 
   const clearList = () => {
@@ -96,3 +94,4 @@ export default ReducerBasics;
 // 18. add dispatch RESET_LIST on ReducerBasics: dispatch({ type: RESET_LIST });
 // 19. add RESET_LIST check type & returning value data on reducer
 // 20. add dispatch for type REMOVE_ITEM on ReducerBasics
+// 21. add other property = payload which is object & have value (id).
