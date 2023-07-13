@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useReducer } from 'react';
 import { data } from '../../../data';
 import { CLEAR_LIST, RESET_LIST, REMOVE_ITEM } from './actions';
+import reducer from './reducer';
+
 
 // default state
 const defaultState = {
@@ -24,7 +26,6 @@ const ReducerBasics = () => {
 
   const resetList = () => {
     dispatch({ type: RESET_LIST });
-    // setPeople(data);
   };
 
   return (
@@ -88,3 +89,4 @@ export default ReducerBasics;
 // 24. add return REMOVE_ITEM & make property people change the value to newPeople
 // 25. defines an error being thrown with a specific error message.
 // 26. import all actions code from actions file
+// 27. relocate reducer code with export & import
