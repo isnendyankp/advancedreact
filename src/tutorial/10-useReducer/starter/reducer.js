@@ -1,4 +1,5 @@
 import { CLEAR_LIST, RESET_LIST, REMOVE_ITEM } from './actions';
+import { data } from '../../../data';
 
 // reducer function
 const reducer = (state, action) => {
@@ -24,3 +25,4 @@ export default reducer;
 //  1. import all actions code for access on reducer
 //  2. relocate reducer function code from userReducer.jsx to reducer.js
 //  3. set export default reducer
+//  4. import data for REMOVE_ITEM reducer code
