@@ -8,7 +8,7 @@ import reducer from './reducer';
 // default state
 const defaultState = {
   people: data,
-  
+  isLoading: false,
 };
 
 
@@ -90,3 +90,4 @@ export default ReducerBasics;
 // 25. defines an error being thrown with a specific error message.
 // 26. import all actions code from actions file
 // 27. relocate reducer code with export & import
+// 28. add isLoading: false for default state
