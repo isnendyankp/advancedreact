@@ -2,15 +2,14 @@ import React from 'react';
 import { useState, useReducer } from 'react';
 import { data } from '../../../data';
 
+
 // default state
 const defaultState = {
   people: data,
   
 };
 
-const CLEAR_LIST = 'CLEAR_LIST';
-const RESET_LIST = 'RESET_LIST';
-const REMOVE_ITEM = 'REMOVE_ITEM';
+
 
 // reducer function
 const reducer = (state, action) => {
