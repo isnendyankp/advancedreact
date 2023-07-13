@@ -19,7 +19,8 @@ const reducer = (state, action) => {
   throw new Error(`No matching "${action.type}" - action type`);
 };
 
-
+export default reducer;
 
 //  1. import all actions code for access on reducer
 //  2. relocate reducer function code from userReducer.jsx to reducer.js
+//  3. set export default reducer
