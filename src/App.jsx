@@ -1,6 +1,6 @@
-import Final from './tutorial/10-useReducer/final/01-useReducer.jsx';
+import Final from './tutorial/11-performance/final/01-lower-state';
 
-import Starter from './tutorial/10-useReducer/starter/01-useReducer.jsx';
+import Starter from './tutorial/11-performance/starter/01-lower-state';
 
 function App() {
   return (
