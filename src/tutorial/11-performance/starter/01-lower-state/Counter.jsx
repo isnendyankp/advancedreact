@@ -1,7 +1,15 @@
 import React from 'react'
 
-export const Counter = () => {
+const Counter = () => {
   return (
-    <div>Counter</div>
-  )
+    <button
+      className="btn"
+      onClick={() => setCount(count + 1)}
+      style={{ marginBottom: '1rem' }}
+    >
+      count {count}
+    </button>
+  );
 }
+
+export default Counter
