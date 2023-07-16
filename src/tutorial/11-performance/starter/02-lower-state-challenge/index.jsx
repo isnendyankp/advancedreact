@@ -6,7 +6,7 @@ const LowerStateChallenge = () => {
   
 
   
-  const addPerson = () => {
+  const addPerson = (name) => {
     const fakeId = Date.now();
     const newPerson = { id: fakeId, name };
     setPeople([...people, newPerson]);
