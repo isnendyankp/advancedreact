@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { data } from '../../../../data';
 import List from './List';
+import Form from './Form';
 const LowerStateChallenge = () => {
   const [people, setPeople] = useState(data);
   
