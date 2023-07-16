@@ -1,6 +1,6 @@
-import Final from './tutorial/11-performance/final/01-lower-state';
+import Final from './tutorial/11-performance/final/02-lower-state-challenge';
 
-import Starter from './tutorial/11-performance/starter/01-lower-state';
+import Starter from './tutorial/11-performance/starter/02-lower-state-challenge';
 
 function App() {
   return (
