@@ -5,15 +5,7 @@ const LowerStateChallenge = () => {
   const [people, setPeople] = useState(data);
   const [name, setName] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!name) {
-      alert('Please Provide Name Value');
-      return;
-    }
-    addPerson();
-    setName('');
-  };
+  
   const addPerson = () => {
     const fakeId = Date.now();
     const newPerson = { id: fakeId, name };
