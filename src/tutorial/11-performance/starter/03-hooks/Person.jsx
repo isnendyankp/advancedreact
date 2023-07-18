@@ -1,4 +1,4 @@
-const Person = ({ name }) => {
+const Person = ({ name, id, removePerson }) => {
   return (
     <div>
       <h4>{name}</h4>
@@ -6,3 +6,5 @@ const Person = ({ name }) => {
   );
 };
 export default Person;
+
+// add two new parameter : id, removePerson
