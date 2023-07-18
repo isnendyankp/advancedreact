@@ -4,7 +4,7 @@ const List = ({ people, removePerson }) => {
   return (
     <div>
       {people.map((person) => {
-        return <Item key={person.id} {...person} />;
+        return <Item key={person.id} {...person} removePerson={removePerson} />;
       })}
     </div>
   );
@@ -12,3 +12,4 @@ const List = ({ people, removePerson }) => {
 export default memo(List);
 
 // import memo & export default memo(list);
+// pass parameter (removePerson) with add value on return
