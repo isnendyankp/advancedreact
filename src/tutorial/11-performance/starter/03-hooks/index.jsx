@@ -8,7 +8,7 @@ const LowerState = () => {
   const removePerson = useCallback((id) => {
     const newPeople = people.filter((person) => person.id !== id);
     setPeople(newPeople);
-  },[])
+  },[people])
   
   
 
