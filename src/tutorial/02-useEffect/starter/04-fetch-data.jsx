@@ -14,10 +14,10 @@ const FetchData = () => {
       console.log(error);
     }
   }, []);
-   
+
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
   return (
     <section>
       <h3>github users</h3>
