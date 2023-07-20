@@ -4,18 +4,17 @@ const url = 'https://api.github.com/users';
 
 const FetchData = () => {
   const [users, setUsers] = useState([]);
-
+  // you can also setup function outside useEffect
+  const fetchData = async () => {
+    try {
+      const response = await fetch(url);
+      const users = await response.json();
+      setUsers(users);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   useEffect(() => {
-    // you can also setup function outside
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const users = await response.json();
-        setUsers(users);
-      } catch (error) {
-        console.log(error);
-      }
-    };
     fetchData();
   }, []);
   return (
