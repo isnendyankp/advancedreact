@@ -1,6 +1,6 @@
-import Final from './tutorial/02-useEffect/final/04-fetch-data';
+import Final from './tutorial/11-performance/final/03-hooks';
 
-import Starter from './tutorial/02-useEffect/starter/04-fetch-data';
+import Starter from './tutorial/11-performance/starter/03-hooks';
 
 function App() {
   return (
