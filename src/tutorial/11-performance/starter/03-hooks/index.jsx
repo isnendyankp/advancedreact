@@ -6,7 +6,7 @@ const LowerState = () => {
   const [people, setPeople] = useState(data);
   const [count, setCount] = useState(0);
 
-  const value = slowFunction();
+  const value = useMemo(() => slowFunction(), []);
   console.log(value);
 
   const removePerson = useCallback(
