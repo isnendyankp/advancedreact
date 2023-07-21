@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { data } from '../../../../data';
 import List from './List';
 import slowFunction from './slowFunction';
@@ -17,8 +17,6 @@ const LowerState = () => {
     },
     [people]
   );
-  
-  
 
   return (
     <section>
