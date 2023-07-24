@@ -2,6 +2,7 @@ import { useState, useTransition } from 'react';
 const LatestReact = () => {
   const [text, setText] = useState('');
   const [items, setItems] = useState([]);
+  const [isPending, startTransition] = useTransition();
 
   const handleChange = (e) => {
     setText(e.target.value);
