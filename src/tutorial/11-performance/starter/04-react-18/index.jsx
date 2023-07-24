@@ -21,25 +21,29 @@ const LatestReact = () => {
   };
   return (
     <section>
-      <form className='form'>
+      <form className="form">
         <input
-          type='text'
-          className='form-input'
+          type="text"
+          className="form-input"
           value={text}
           onChange={handleChange}
         />
       </form>
       <h4>Items Below</h4>
 
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          marginTop: '2rem',
-        }}
-      >
-        {items}
-      </div>
+      {isPending ? (
+        'Loading...'
+      ) : (
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr 1fr',
+            marginTop: '2rem',
+          }}
+        >
+          {items}
+        </div>
+      )}
     </section>
   );
 };
