@@ -8,14 +8,16 @@ const LatestReact = () => {
     setText(e.target.value);
 
     // slow down CPU
-    const newItems = Array.from({ length: 5000 }, (_, index) => {
-      return (
-        <div key={index}>
-          <img src='/vite.svg' alt='' />
-        </div>
-      );
+    startTransition(() => {
+      const newItems = Array.from({ length: 5000 }, (_, index) => {
+        return (
+          <div key={index}>
+            <img src="/vite.svg" alt="" />
+          </div>
+        );
+      });
+      setItems(newItems);
     });
-    setItems(newItems);
   };
   return (
     <section>
