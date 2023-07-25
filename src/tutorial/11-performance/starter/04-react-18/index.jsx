@@ -1,4 +1,5 @@
 import { useState, useTransition } from 'react';
+import SlowComponent from './SlowComponent';
 const LatestReact = () => {
   const [text, setText] = useState('');
   const [items, setItems] = useState([]);
