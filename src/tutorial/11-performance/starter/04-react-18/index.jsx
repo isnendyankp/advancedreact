@@ -44,7 +44,10 @@ const LatestReact = () => {
           {items}
         </div>
       )}
-      <SlowComponent />
+      <button onClick={() => setShow(!show)} className="btn">
+        toggle
+      </button>
+      {show && <SlowComponent />}
     </section>
   );
 };
