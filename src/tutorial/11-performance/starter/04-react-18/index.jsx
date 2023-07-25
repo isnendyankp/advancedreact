@@ -44,6 +44,7 @@ const LatestReact = () => {
           {items}
         </div>
       )}
+      <SlowComponent />
     </section>
   );
 };
